@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity</title>
+    <style>
+        body{
+            background-color: #25316D;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .navbar{
+            background-color: #25316D;
+            color: white;
+            font-size: 1.5em;
+            padding: 3px;
+        }
+        #navlink{
+            float: right;
+        }
+        #navlink a{
+            color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+        #navlink a:hover{
+            background-color: black;
+        }
+        #home{
+            width: 100%;
+            height: 800px;
+        }
+        #scrolltxt{
+            position: relative;
+            z-index: 2;
+            font-size: 2.5em;
+            top: -750px;
+            background-color: rgba(112, 146, 210, 0.3);
+            color: red;
+            height: fit-content;
+            padding: 0px;
+            font-weight: bold;
+        }
+        marquee{
+            height: fit-content;
+        }
+        #base{
+            position: relative;
+            z-index: 2;
+            background-color: rgba(256,256,256,0.2);
+            height: 500px;
+            top: -675px;
+        }
+        
+        #cyberpara{
+            position: absolute;
+            display: inline;
+            font-size: 1.5em;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: justify;
+            width: 50%;
+            padding: 5px;
+            line-height: 1.2em;
+        }
+        legend{
+            font-size: 1.5em;
+        }
+        fieldset{
+            background-color: rgba(256,256,256,0.2);
+            border: 10px double white;
+            color: #16213E;
+            height: 100%;
+        }
+        #scrollimg{
+            margin-left: 10px;
+            margin-right: 10px;
+            position: absolute;
+            display: inline;
+            left: 50%;
+            width: 49%;
+            background-color: rgba(256,256,256,0.2);
+            height: 100%;
+        }
+        #gif{
+            position: relative;
+            top: +20px;
+        }
+        #gif img{
+            height: 460px;
+            width: 460px;
+        }
+        #cybercrime{
+            color: white;
+            line-height: 1.2em;
+            font-size: 1.5em;
+            font-family:'Courier New', Courier, monospace;
+        }
+        #cybercrime p{
+            margin-left: 10px;
+            text-align: justify;
+            
+        }
+        .cat-row {
+            width: 70%;
+            margin: 1.25em auto 1.25em auto;
+            text-align: left;
+            background-color: rgba(164, 187, 230, 0.3);
+            padding: 5px;
+            border: 5px double white;
+        }
+        .cat-img {
+            float: left;
+            margin-top: 25px;
+            margin-right: 30px;
+        }
+        #cybercat{
+            color: white;
+            line-height: 1.2em;
+            font-size: 1.5em;
+            font-family:'Courier New', Courier, monospace;
+        }
+        #cybersecurity{
+            color: white;
+            line-height: 1.2em;
+            font-size: 1.5em;
+            font-family:'Courier New', Courier, monospace;
+            text-align: justify;
+        }
+        li:before { 
+            content: '\🖥️'; 
+            margin-left: -25px; 
+            margin-right: 10px;
+            display: inline;
+        } 
+        li{
+            margin: 20px 20px;
+        }
+        #gif2{
+            margin-top: -30px;
+        }
+        table, tr, td, th{
+            padding: 2px;
+            background-color: rgba(256, 256, 256, 0.3);
+            color: rgb(22, 52, 224);
+            font-weight: bold;
+        }
+        #contact{
+            color: white;
+            line-height: 1.2em;
+            font-size: 1.5em;
+            font-family:'Courier New', Courier, monospace;
+            text-align: justify;
+            background-color: rgba(256, 256, 256, 0.1);
+        }
+        td{
+            height: 40px;
+            padding: 10px;
+        }
+        input[type="submit"]{
+            float: right;
+            font-size: 1em;
+            background-color: #2F3C7E;
+            color: white;
+        }
+        input[type="reset"]{
+            float: left;
+            font-size: 1em;
+            background-color: #2F3C7E;
+            color: white;
+        }
+        #end{
+            background-color: rgba(256, 256, 256, 0.5);
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        #end a{
+            color: black;
+        }
+        #webname{
+            font-weight: bold;
+        }
+        #webname:hover{
+            background-color: black
+        }
+        #formdiv{
+            border-right: 2px solid white;
+        }
+        #resource{
+            padding: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar" id="top">
+        <span id="webname">Cyber Crime and Security</span>
+        <span id="navlink">
+            <a href="#home">Home</a>|
+            <a href="#cybercrime">Cybercrime</a>|
+            <a href="#cybercat">Cybercrime Categories</a>|
+            <a href="#cybersecurity">Cybersecurity</a>|
+            <a href="#contact">Contact Us</a>|
+        </span>
+    </div>
+    <br>
+    <div id="home">
+        <img id="homeimg" src="images/home.jpg" alt="hackerimage" height="100%" width="100%" style="opacity: 70%;">
+        <div id="scrolltxt">
+            <marquee behavior="scrolltxt" direction="right"><span style="opacity: 100%;">⚠️You are being watched!⚠️</span></marquee>
+        </div>
+        <div id="base">
+            <div id = "cyberpara">
+                <br>
+                <fieldset>
+                    <legend>The Cyberspace</legend>
+                    <p>
+                        <span style="font-size: 2em;">O</span>wing to rapid technological advancements, more and more people are moving to the cyberspace. Moving away from conventional methods, people have started connecting virtually over the cyberspace. This digital revolution gave way to cybercrime. Almost every day, we hear about websites being hacked, data being stolen, personal information being leaked and many other cybercrime incidents. Hence, it becomes necessary to educate ourself about the different ways we can be scammed in the cyberspace.
+                    </p>
+                </fieldset>                
+            </div>
+            <div id ="scrollimg">
+                <div id="gif">
+                    <marquee behavior="alternate" direction="">
+                        <a href="https://timesofindia.indiatimes.com/city/mumbai/cybercrime-up-18-in-mumbai-actual-numbers-may-be-even-more/articleshow/93865825.cms?from=mdr" target="_blank"><img src="images/new1.jpg" alt="news1"></a>
+                        <a href="https://www.business-standard.com/article/pf/how-to-safeguard-yourself-from-financial-frauds-online-and-offline-121091701165_1.html" target="_blank"><img src="images/new2.jpeg" alt=""></a>
+                        <a href="https://www.hindustantimes.com/cities/cyber-safety-remains-a-concern-in-mumbai/story-Nvr9VdvZxTAe6GOuQXNrbM.html" target="_blank"><img src="images/new3.jpg" alt="news3"></a>
+                        <a href="https://timesofindia.indiatimes.com/city/hyderabad/cyber-crime-bill-in-the-pipeline-may-introduce-tougher-punishments/articleshow/70984563.cms" target="_blank"><img src="images/new4.webp" alt="news4"></a>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr id="cybercrime">
+    <div id="cybercrime">
+        <h2>What is Cybercrime?</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 2em;">T</span>o put it simply, cybercrime refers to crime that has taken in the cyberspace and involves a computer and a network. A cybercriminal can use computer as a tool and target your devices to access your sensitive information. The motive for these types of attacks depends on the nature of the cybercrime and motive of the cybercriminal.</p>
+    </div>
+    <hr id="cybercat">
+    <div id="cybercat">
+        <h2>Cybercrime Categories</h2>
+        <div class="cat-row">
+            <img class="cat-img" src="images/individual.png" alt="">
+            <h3>Crime against Individual</h3>
+            <p>Cybercrimes carried out against a single individual like identity theft, cyberstalking, cyber harassment, staling etc.</p>
+        </div>
+        <div class="cat-row">
+            <img class="cat-img" src="images/property.png" alt="">
+            <h3>Crime against Property</h3>
+            <p>Cybercrimes carried out against computer or network to steal data and intellectual property like DDoS attacks, virus distribution, stealing copyrighted content, etc.</p>
+        </div>
+        <div class="cat-row">
+            <img class="cat-img" src="images/hands.png" alt="">
+            <h3>Crime against Government</h3>
+            <p>Cybercrimes carried out by cyberterrorists to obtain other country’s confidential information and hack into critical infrastructure.</p>
+        </div>
+    </div>
+    <hr id="cybersecurity">
+    <div id="cybersecurity">
+        <h2>Cybersecurity</h2>
+        <center><img src="images/bggif.gif" alt="" height="300px" id="gif2"></center>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 2em;">C</span>yber security is the practice of keeping our cyberspace secure from digital attacks. Considering the recent incidents of cyberattacks, it becomes important that we know and understand how we can make our systems least vulnerable to such attacks. We must be aware of the measures that are required to tackle any kind of breach. Some of the best practices to minimize cyber attacks are as follows:
+        </p>
+        <ul>
+            <li>
+                Install the latest versions anti-virus and anti-malware and scan your system periodically for updates.
+            </li>
+            <li>
+                Keep check on suspicious emails and prevent clicking suspicious links or downloading attachments from unknown people.
+            </li>
+            <li>
+                Use Virtual Private Network (VPN) to protect your private information from your Internet Service Provider.
+            </li>
+            <li>
+                Change your passwords periodically and enable multi-factor authentication.
+            </li>
+            <li>
+                Always be vigilant while browsing the internet and watch out for potential attacks.
+            </li>
+        </ul>
+    </div>
+    <hr id="contact">
+    <div id="contact" style="width: 100%; overflow: hidden;">
+        <div id="formdiv" style="width: 55%; float: left;">
+            <center>
+            <h3>Have a query, feel free to contact us...</h3>
+            <div id="contactform">
+                <form action="">
+                    <table> 
+                        <tbody>
+                            <tr>
+                                <td><label for="name">Name: </label></td>
+                                <td><input type="text" id="name" size="40"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email Address: </label></td>
+                                <td><input type="email" id="email" required size="40"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="query">Query:</label></td>
+                                <td><textarea name="query" id="query" cols="40" rows="20" required></textarea></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Submit">
+                                    <input type="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        </center>
+        </div>
+        <div id="resource" style="margin-left: 55%">
+            <center>
+                <h3>Learn more...</h3>
+                <br>
+                <iframe width="650" height="450" src="https://www.youtube.com/embed/PlHnamdwGmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div id="end">
+            Kuldeep Gupta &#169; 2022
+            <a href="#top" style="display: inline; float:right">Back to Top</a>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>
