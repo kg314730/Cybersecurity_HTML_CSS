@@ -1,1 +1,1 @@
-The site is live at: https://github.com/kg314730/Cybersecurity_HTML_CSS/settings
+The site is live at: https://kg314730.github.io/Cybersecurity_HTML_CSS/
